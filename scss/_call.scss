@@ -1,0 +1,93 @@
+.call {
+   background: #f9f9f9;
+   padding-top: 44px;
+   padding-bottom: 44px;
+
+   @include media-breakpoint-down(md) {
+      padding: 20px 0;
+   }
+   &__content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @include media-breakpoint-down(md) {
+         flex-direction: column;
+      }
+   }
+
+   &__callback {
+      display: flex;
+      align-items: center;
+
+      @include media-breakpoint-down(md) {
+         order: 2;
+         flex-direction: column;
+      }
+   }
+
+   &__number {
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 31px;
+      color: #000000;
+
+      &:before {
+         color: #51a0ff;
+         font-size: 35px;
+         padding-right: 26px;
+
+         @include media-breakpoint-down(lg) {
+            font-size: 25px;
+         }
+      }
+
+      @include media-breakpoint-down(lg) {
+         font-size: 20px;
+         line-height: 25px;
+      }
+   }
+
+   &__btn {
+      margin-left: 30px;
+      padding: 16px 19px;
+
+      background: linear-gradient(0deg, #51a0ff, #51a0ff), #ffc148;
+      border-radius: 3px;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 18px;
+      /* identical to box height */
+
+      text-transform: uppercase;
+
+      color: #ffffff;
+
+      @include media-breakpoint-down(md) {
+         margin-top: 15px;
+         margin-left: 0;
+      }
+   }
+
+   &__txt-box {
+   }
+
+   &__txt {
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center;
+      text-transform: uppercase;
+
+      color: #000000;
+
+      @include media-breakpoint-down(lg) {
+         font-size: 14px;
+         line-height: 18px;
+      }
+
+      @include media-breakpoint-down(md) {
+         margin-bottom: 15px;
+      }
+   }
+}
